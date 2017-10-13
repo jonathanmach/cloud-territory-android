@@ -1,0 +1,12 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+</resources>
+
+<!--
+Todo: Usei o Theme.AppCompat mesmo para o estilo do v21, porque não sei qual o parent="" equivalente
+Fiz isso pq dava crash no meu Nexus.
+-->

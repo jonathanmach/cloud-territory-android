@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.materialdesignappbar.BlankFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_EventLog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--    Quando ainda usava ListView:
+                 <ListView
+                    android:layout_below="@+id/rl_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lvterritory"/>
+        -->
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.jonathan.materialdesignappbar.BlankFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/address_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="4dp"
+                android:background="#cccccc" />
+
+            <EditText
+                android:id="@+id/editText_Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street, number - City"
+                android:inputType="textCapWords"
+                android:textColorHint="#c6c6c6" />
+
+            <EditText
+                android:id="@+id/editText_complement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complement, apartment, etc."
+                android:layout_gravity="center_horizontal"
+                android:inputType="textCapSentences"
+                android:textColorHint="#c6c6c6" />
+
+<!--    Telefone removido do projeto
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Phone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:id="@+id/textView"
+                android:textStyle="bold" />
+            <View
+                android:id="@+id/address_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_addressHeader"
+                android:layout_marginBottom="4dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.30">
+
+                <ImageView
+                    android:id="@+id/imageViewPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_phone" />
+
+                <EditText
+                    android:id="@+id/editText_Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:hint="11 9999-9999" />
+            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="References"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:id="@+id/textView2"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/additionalInfo_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_addressHeader"
+                android:layout_marginBottom="4dp"
+                android:background="#cccccc" />
+
+            <EditText
+                android:id="@+id/editText_AdditionalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapSentences|textMultiLine"
+                android:hint="Reference points, neighborhood, etc."
+                android:textColorHint="#c6c6c6" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+
+            card_view:backgroundTint="@color/ColorPrimaryDark" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

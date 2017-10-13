@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--    3. Even though ActionBars are replaced by App bar/Toolbar we can still use ActionBar,
+            but in our case we are going to make a Toolbar so go to your style.xml and change the
+            theme to "Theme.AppCompat.Light.NoActionBar, This helps us get rid of the ActionBar so we can make a App bar. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/ColorPrimaryDark</item>
+
+
+    </style>
+
+</resources>

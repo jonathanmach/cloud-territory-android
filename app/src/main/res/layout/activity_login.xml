@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.cloudterritory.cloudterritory.LoginActivity"
+    android:background="@color/ColorPrimary">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/loginlogo" />
+
+    <LinearLayout
+        android:layout_below="@+id/imageView3"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/vUserName"
+            android:textColorHint="@android:color/primary_text_dark"
+            android:textColor="@android:color/primary_text_dark"
+            android:layout_gravity="center_horizontal"
+            android:saveEnabled="true"
+            android:backgroundTint="@android:color/primary_text_dark"
+            android:hint="Username" />
+
+        <EditText
+            android:backgroundTint="@android:color/primary_text_dark"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@android:color/primary_text_dark"
+            android:textColor="@android:color/primary_text_dark"
+            android:maxLines="1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/vPassword"
+            android:layout_gravity="center_horizontal"
+            android:hint="Password" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/PrimaryText"
+            android:fontFamily="sans-serif"
+            android:id="@+id/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:onClick="login" />
+    </LinearLayout>
+
+
+</RelativeLayout>

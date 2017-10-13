@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.jonathan.materialdesignappbar.BlankFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--MESSAGES-->
+            <RelativeLayout
+                android:layout_below="@+id/ll_addressHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ListView
+                android:transcriptMode="alwaysScroll"
+                android:stackFromBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewMessages"
+                android:padding="3dp" />
+            </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+
+            card_view:backgroundTint="@color/ColorPrimaryDark" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

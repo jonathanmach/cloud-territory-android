@@ -1,0 +1,15 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:elevation="4dp">
+</android.support.v7.widget.Toolbar>
+
+<!-- Essa opção que é fundametal:
+    android:layout_height="wrap_content"
+
+    9.  Notice that the name of the app "MaterialToolbar" is black as we have set the theme parent to Theme.AppCompat.Light.NoActionBar in step 3 it gives the dark text color, So if you want to set the name as light/white text then you can just add android:theme="@style/ThemeOverlay.AppCompat.Dark" in tool_bar.xml and you would get a light text color for the toolbar text, So finally tool_bar.xml looks like this.
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+    -->

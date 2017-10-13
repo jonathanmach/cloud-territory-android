@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonathan.materialdesignappbar.BlankFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_header">
+
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/rl_header"
+            android:id="@+id/cardList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+
+<!--    Quando ainda usava ListView:
+         <ListView
+            android:layout_below="@+id/rl_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvterritory"/>
+-->
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,101 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:elevation="5dp">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".TerritoryList">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/linearLayout"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/territory1"
+            android:id="@+id/imageView2"
+            android:padding="3dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1012"
+            android:id="@+id/vIDterritory"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="#32000000"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/lay">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="45 - Jd. Têxteis"
+            android:maxLines="1"
+            android:id="@+id/vTerritoyName"
+            android:layout_marginTop="3dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Cidade Tirandentes"
+                android:id="@+id/vCityZone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:maxLines="1"
+                android:textStyle="italic" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/SecundaryText"
+                android:text="Publisher's Name"
+                android:id="@+id/txtvPublisherName"
+                android:background="@drawable/round_corners"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
